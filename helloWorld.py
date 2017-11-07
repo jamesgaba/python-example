@@ -20,6 +20,9 @@ list = ['cat', 'dog', 'goat']
 for w in list:
     print(w, len(w))
 
+for i in range(len(list)):
+    print(bin(i),list[i])
+
 for w in list[:]:
     if len(w) > 3:
         list = [w] + list
@@ -30,7 +33,11 @@ s = 'hahahahbahahah'
 for c in s:
     print(c)
 
-age=int(input("please enter your age: "))
+for x in range(33,55):
+    print(x)
+
+#age=int(input("please enter your age: "))
+age=0
 
 if age < 20:
     print("man you're young!")
@@ -38,4 +45,13 @@ elif age > 40:
     print("man you're old!!")
 else:
     print("you're in between!")
+
+# prime finder
+for n in range(1950000, 2000000):
+    for x in range(2, n):
+        if n % x == 0:
+            #print(n, 'can be factored as', x, 'x', n//x)
+            break
+    else:
+        print(n, 'is a prime number')
 

@@ -56,3 +56,4 @@ else:
     print("you're in between!")
 
 prime_finder(800, 900)
+prime_finder()
